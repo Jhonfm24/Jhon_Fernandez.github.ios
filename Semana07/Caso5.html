@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 06</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/ejercicio5.jpg" alt="Caso1">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Varaiables
+                var edad,nv_hgb,resultado;
+
+                //Fase de lectura/escritura
+                edad=prompt("Ingrese la edad de la persona");
+                nv_hgb=parseFloat(prompt("Ingrese su Nivel de Hgb"));
+
+                //Fase de Porcesamiento
+                if (edad<="0y") {
+                    if (nv_hgb>=13 && nv_hgb<=26) {
+                        resultado= "Negativo en Anemia";
+                    } else {
+                        resultado= "Positivo en Anemia";
+                    }
+                }
+                if (edad<="1y") {
+                    if (nv_hgb>=10 && nv_hgb<=18) {
+                        resultado= "Negativo en Anemia";
+                    } else {
+                        resultado= "Positivo en Anemia";
+                    }
+                }
+                if (edad<="6y") {
+                    if (nv_hgb>=11 && nv_hgb<=15) {
+                        resultado= "Negativo en Anemia";
+                    } else {
+                        resultado= "Positivo en Anemia";
+                    }
+                }
+                if (edad<="4y") {
+                    if (nv_hgb>=11.5 && nv_hgb<=15) {
+                        resultado= "Negativo en Anemia";
+                    } else {
+                        resultado= "Positivo en Anemia";
+                    }
+                }
+                if (edad<="5y") {
+                    if (nv_hgb>=12.6 && nv_hgb<=15.5) {
+                        resultado= "Negativo en Anemia";
+                    } else {
+                        resultado= "Positivo en Anemia";
+                    }
+                }
+                if (edad<="10y") {
+                    if (nv_hgb>=13 && nv_hgb<=15.5) {
+                        resultado= "Negativo en Anemia";
+                    } else {
+                        resultado= "Positivo en Anemia";
+                    }
+                }
+                //Fase de salida
+                document.write("======RESULTADO DE ANEMIA======"+"<br>");
+                document.write("<br>");
+                document.write("Edad : "+edad+"<br>");
+                document.write("Nivel de Hemoglobina : "+nv_hgb+"g%"+"<br>");
+                document.write("Resultado : "+resultado+"<br>");
+                document.write("<br>");
+                document.write("======FIN=====");
+            </script>
+        </div>
+    </main>
+</body>
+</html>

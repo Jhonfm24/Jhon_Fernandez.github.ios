@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 06</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/ejercicio3.jpg" alt="Caso1">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Varaiables
+                var precio,cant_kg,descuento,costo_ini,costo_fin;
+
+                //Fase de lectura/escritura
+                cant_kg=parseInt(prompt("Ingrese el número de Kg comprados"));
+                precio=parseInt(prompt("Ingrese el precio del Kg de manzana"));
+
+                //Fase de Porcesamiento
+                if (cant_kg<=2) {
+                    descuento=0;
+                } else {
+                    if (cant_kg<=5) {
+                        descuento=0.10;
+                    } else {
+                        if (cant_kg<=10) {
+                            descuento=0.15;
+                        } else {
+                            descuento=0.20
+                        }
+                    }
+                }
+                costo_ini=cant_kg*precio;
+                costo_fin=costo_ini-(costo_ini*descuento);
+
+                //Fase de salida
+                document.write("=====PAGO POR KG DE MANZANA====="+"<br>");
+                document.write("<br>");
+                document.write("Cantidad de Kg comprados: "+cant_kg+"<br>");
+                document.write("Precio por Kg de manzana "+precio+"<br>");
+                document.write("Descuento: "+descuento+"<br>");
+                document.write("Costo Inicial: "+costo_ini+"<br>");
+                document.write("Costo Final: "+costo_fin);
+            </script>
+        </div>
+    </main>
+</body>
+</html>

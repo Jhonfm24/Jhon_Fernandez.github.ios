@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 06</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/ejercicio4.jpg" alt="Caso1">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Varaiables
+                var nota1,nota2,nota3,nota4,prom,nota_eliminada;
+
+                //Fase de lectura/escritura
+                nota1=parseInt(prompt("Ingrese la Nota de la Pc1"));
+                nota2=parseInt(prompt("Ingrese la Nota de la Pc2"));
+                nota3=parseInt(prompt("Ingrese la Nota de la Pc3"));
+                nota4=parseInt(prompt("Ingrese la Nota de la Pc4"));
+
+                //Fase de Porcesamiento
+                nota_eliminada=Math.min(nota1,nota2,nota3,nota4);
+                prom=((nota1+nota2+nota3+nota4) - nota_eliminada)/3;
+
+                //Fase de salida
+                document.write("======PROMEDIO DE PRACTICAS======"+"<br>");
+                document.write("<br>");
+                document.write("Nota de la Pc1: "+nota1+"<br>");
+                document.write("Nota de la Pc2: "+nota2+"<br>");
+                document.write("Nota de la Pc3: "+nota3+"<br>");
+                document.write("Nota de la Pc4: "+nota4+"<br>");
+                document.write("Nota Eliminada: "+nota_eliminada+"<br>");
+                document.write("Promedio Final: "+prom.toFixed(2)+"<br>");
+                document.write("<br>");
+                document.write("======FIN=====");
+            </script>
+        </div>
+    </main>
+</body>
+</html>

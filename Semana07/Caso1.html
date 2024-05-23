@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana_07</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/ejercicio1.jpg" alt="Caso1">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Variables
+                var cant_llantas,costo_total,precio;
+
+                //Fase de lectura/escritura
+                cant_llantas=parseInt(prompt("Ingrese la cantidad de llantas a comprar"))
+
+                //Fase de procesamiento de datos
+                if (cant_llantas<5) {
+                    precio=30000;
+                } else {
+                    if (cant_llantas<10) {
+                        precio=25000;
+                    } else {
+                        precio=10000;
+                    }
+                }
+                costo_total=precio*cant_llantas;
+
+                //Fase de salida
+                document.write("=====PROMOCION DE LLANTAS====="+"<br>");
+                document.write("<br>");
+                document.write("Cantidad de Llantas: "+cant_llantas+"<br>");
+                document.write("Precio por Unidad: "+"$"+precio+"<br>");
+                document.write("Costo Total: "+"$"+costo_total+"<br>");
+                document.write("<br>");
+                document.write("======FIN=====");
+            </script>
+        </div>
+    </main>
+</body>
+</html>

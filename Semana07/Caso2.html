@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana_07</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-amarillo2.png" alt="logo" height="100px">
+        </header>
+        <h1>
+            CASOS PRACTICOS DE CONDICIONES ANIDADAS
+        </h1>
+        <div id="caso">
+            <img src="img/ejercicio2.jpg" alt="Caso1">
+        </div>
+        <div id="solucion">
+            <script>
+                //Declaracion de Variables
+                var condicion_1,condicion_2,grado;
+
+                //Fase de lectura/escritura
+                condicion_1=parseInt(prompt("Ingrese la cantidad de tornillos defectuosos"));
+                condicion_2=parseInt(prompt("Ingrese la cantidad de tornillos producidos"));
+
+                //Fase de Porcesamiento
+                if (condicion_1<200 && condicion_2>10000) {
+                    grado=8
+                } else {
+                    if (condicion_2>10000) {
+                        grado=7;
+                    } else {
+                        if (condicion_1<200) {
+                            grado=6;
+                        } else {
+                            grado=5;
+                        }
+                    }
+                }
+                //Fase de salida
+                document.write("=====GRADO DE EFICIENCIA====="+"<br>");
+                document.write("<br>");
+                document.write("Tornillos Defectuosos: "+condicion_1+"<br>");
+                document.write("Tornillos producidos: "+condicion_2+"<br>");
+                document.write("Grado: "+grado+"<br>");
+                document.write("<br>");
+                document.write("======FIN=====");
+            </script>
+        </div>
+    </main>
+</body>
+</html>
